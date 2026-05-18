@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #1a2233;
+}
+
+.counter {
+  width: min(92vw, 420px);
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(18, 28, 45, 0.12);
+  text-align: center;
+}
+
+.counter h1 {
+  margin: 0 0 12px;
+  font-size: 32px;
+}
+
+.counter-value {
+  margin: 0 0 20px;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.counter-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.counter-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #e7ecf7;
+  color: #1a2233;
+  cursor: pointer;
+}
+
+.counter-actions button:hover {
+  background: #d8e1f3;
+}
