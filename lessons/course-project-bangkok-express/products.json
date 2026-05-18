@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Penang shrimp",
+    "price": 16,
+    "category": "Seafood dishes",
+    "spicy": 3,
+    "image": "🍤",
+    "description": "Shrimp with spicy curry sauce"
+  },
+  {
+    "id": 2,
+    "name": "Tom yam kai",
+    "price": 7,
+    "category": "Soups",
+    "spicy": 4,
+    "image": "🍲",
+    "description": "Hot and sour chicken soup"
+  },
+  {
+    "id": 3,
+    "name": "Tom kha kai",
+    "price": 7,
+    "category": "Soups",
+    "spicy": 2,
+    "image": "🥥",
+    "description": "Chicken soup with coconut milk"
+  },
+  {
+    "id": 4,
+    "name": "Som tam papaya salad",
+    "price": 9,
+    "category": "Salads",
+    "spicy": 5,
+    "image": "🥗",
+    "description": "Green papaya salad with chili"
+  },
+  {
+    "id": 5,
+    "name": "Chicken cashew",
+    "price": 12,
+    "category": "Chicken dishes",
+    "spicy": 1,
+    "image": "🍗",
+    "description": "Chicken with cashew nuts"
+  },
+  {
+    "id": 6,
+    "name": "Seafood glass noodles",
+    "price": 14,
+    "category": "Seafood dishes",
+    "spicy": 2,
+    "image": "🍜",
+    "description": "Glass noodles with seafood"
+  }
+]

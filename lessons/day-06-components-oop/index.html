@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 06 — Components and OOP</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 06: Bangkok Express Components</h1>
+      <p class="lesson__description">
+        Практика компонентной архитектуры: class, constructor, this, Custom Events и modules.
+      </p>
+
+      <section class="block">
+        <h2 class="block__title">Carousel component</h2>
+        <div class="carousel-root" data-component="carousel"></div>
+      </section>
+
+      <section class="layout">
+        <div class="block">
+          <h2 class="block__title">Products components</h2>
+          <div class="products-root" data-component="products"></div>
+        </div>
+
+        <aside class="block">
+          <h2 class="block__title">Cart component</h2>
+          <div class="cart-root" data-component="cart"></div>
+        </aside>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Architecture notes</h2>
+        <ul class="architecture-notes" data-component="notes"></ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

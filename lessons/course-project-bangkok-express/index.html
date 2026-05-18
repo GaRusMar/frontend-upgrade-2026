@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Project — Bangkok Express</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Course Project</p>
+        <h1 class="header__title">Bangkok Express</h1>
+        <p class="header__description">
+          Финальный проект jsbasic: DOM, events, components, forms, fetch, async.
+        </p>
+      </div>
+
+      <button class="cart-button" type="button" data-action="open-cart">
+        Cart <span data-cart="count">0</span>
+      </button>
+    </header>
+
+    <section class="section carousel" data-component="carousel">
+      <div class="carousel__content">
+        <p class="eyebrow">Featured</p>
+        <h2 data-carousel="title">—</h2>
+        <p data-carousel="description">—</p>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="button button--secondary" type="button" data-action="carousel-prev">Prev</button>
+        <button class="button" type="button" data-action="carousel-next">Next</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Categories</h2>
+      <div class="ribbon" data-component="categories"></div>
+    </section>
+
+    <section class="section filters">
+      <div class="field">
+        <label for="search">Search dish</label>
+        <input id="search" class="input" type="text" placeholder="Tom yam" data-filter="search">
+        <ul class="suggestions" data-filter="suggestions"></ul>
+      </div>
+
+      <div class="field">
+        <label for="spicy">Spicy level: <strong data-filter="spicy-value">0</strong></label>
+        <input id="spicy" class="input" type="range" min="0" max="5" value="0" data-filter="spicy">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Menu</h2>
+        <button class="button" type="button" data-action="load-products">Load products</button>
+      </div>
+
+      <p class="status" data-status="products-loading" hidden>Loading products...</p>
+      <p class="error" data-status="products-error"></p>
+      <div class="products-grid" data-component="products"></div>
+    </section>
+
+    <div class="modal" data-component="cart-modal" hidden>
+      <div class="modal__content">
+        <button class="modal__close" type="button" data-action="close-cart">×</button>
+
+        <h2>Your cart</h2>
+        <div class="cart-list" data-cart="items"></div>
+        <p class="cart-total">Total: <strong data-cart="total">€0.00</strong></p>
+
+        <form class="order-form" data-form="order" novalidate>
+          <h3>Order details</h3>
+
+          <label class="field">
+            <span>Name</span>
+            <input class="input" type="text" name="name" placeholder="Santa Claus">
+            <small class="error" data-error="name"></small>
+          </label>
+
+          <label class="field">
+            <span>Phone</span>
+            <input class="input" type="tel" name="phone" placeholder="+123456789">
+            <small class="error" data-error="phone"></small>
+          </label>
+
+          <label class="field">
+            <span>Email</span>
+            <input class="input" type="email" name="email" placeholder="user@example.com">
+            <small class="error" data-error="email"></small>
+          </label>
+
+          <label class="field">
+            <span>Address</span>
+            <input class="input" type="text" name="address" placeholder="Bangkok street, 1">
+            <small class="error" data-error="address"></small>
+          </label>
+
+          <label class="field">
+            <span>Comment</span>
+            <textarea class="textarea" name="comment" rows="3" placeholder="No onion, please"></textarea>
+          </label>
+
+          <small class="error" data-error="cart"></small>
+
+          <button class="button" type="submit" data-submit="button">Send order</button>
+        </form>
+
+        <p class="status" data-submit="loading" hidden>Sending order...</p>
+        <p class="error" data-submit="error"></p>
+        <p class="success" data-submit="success"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

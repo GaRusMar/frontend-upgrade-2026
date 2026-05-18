@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 01 — Price Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="calculator">
+      <h1 class="calculator__title">Bangkok Express Price Calculator</h1>
+      <p class="calculator__description">
+        Day 01: основы JavaScript, инструменты разработки и отладки.
+      </p>
+
+      <form class="calculator__form" novalidate>
+        <label class="calculator__field">
+          <span class="calculator__label">Dish price, €</span>
+          <input class="calculator__input calculator__input--price" type="number" value="16">
+        </label>
+
+        <label class="calculator__field">
+          <span class="calculator__label">Quantity</span>
+          <input class="calculator__input calculator__input--quantity" type="number" value="2">
+        </label>
+
+        <label class="calculator__field">
+          <span class="calculator__label">Delivery price, €</span>
+          <input class="calculator__input calculator__input--delivery" type="number" value="5">
+        </label>
+
+        <label class="calculator__field">
+          <span class="calculator__label">Promo code</span>
+          <input class="calculator__input calculator__input--promo" type="text" placeholder="BANGKOK10">
+        </label>
+
+        <button class="calculator__button" type="submit">Calculate</button>
+      </form>
+
+      <p class="calculator__error"></p>
+
+      <div class="calculator__result" aria-live="polite">
+        <p>Items total: <strong data-result="items-total">—</strong></p>
+        <p>Discount: <strong data-result="discount">—</strong></p>
+        <p>Delivery: <strong data-result="delivery">—</strong></p>
+        <p>Final total: <strong data-result="final-total">—</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 09 — Promises Async Details</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 09: Bangkok Express Async Order Flow</h1>
+      <p class="lesson__description">Event loop, Promise, Promise methods, promisification, async/await.</p>
+
+      <section class="block">
+        <h2 class="block__title">Controls</h2>
+        <div class="controls">
+          <button class="button" type="button" data-action="event-loop">Event loop demo</button>
+          <button class="button" type="button" data-action="chain">Run Promise chain</button>
+          <button class="button" type="button" data-action="all">Run Promise.all</button>
+          <button class="button" type="button" data-action="race">Run Promise.race</button>
+          <button class="button" type="button" data-action="all-settled">Run Promise.allSettled</button>
+          <button class="button" type="button" data-action="promisify">Run promisification</button>
+          <button class="button" type="button" data-action="async-await">Run async/await</button>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="block">
+          <h2 class="block__title">State</h2>
+          <p class="status" data-state="loading" hidden>Loading...</p>
+          <p class="error" data-state="error"></p>
+          <p class="success" data-state="success"></p>
+        </div>
+
+        <div class="block">
+          <h2 class="block__title">Results</h2>
+          <ul class="list" data-state="results"></ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Event log</h2>
+        <ul class="list" data-state="log"></ul>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

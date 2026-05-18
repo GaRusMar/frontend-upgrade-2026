@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 04 — DOM Model</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 04: Bangkok Express Product Card Renderer</h1>
+      <p class="lesson__description">
+        Практика DOM: поиск элементов, создание карточек, атрибуты, dataset, classList и render.
+      </p>
+
+      <div class="toolbar">
+        <button class="toolbar__button" type="button" data-action="render">Render products</button>
+        <button class="toolbar__button toolbar__button--secondary" type="button" data-action="clear">Clear products</button>
+      </div>
+
+      <section class="block">
+        <h2 class="block__title">Featured product</h2>
+        <div class="featured-product"></div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Categories</h2>
+        <ul class="categories-list"></ul>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Products</h2>
+        <p class="empty-state" hidden>No products found</p>
+        <div class="products-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

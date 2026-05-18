@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 03 — Arrays and Functions</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 03: Bangkok Express Products Analyzer</h1>
+      <p class="lesson__description">
+        Практика массивов, функций, callback, поиска, фильтрации, сортировки и замыканий.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h2 class="card__title">Products count</h2>
+          <p class="metric">
+            Total products:
+            <strong data-summary="count">—</strong>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Categories</h2>
+          <ul class="list" data-list="categories"></ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Product names</h2>
+          <ul class="list" data-list="names"></ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Filtered products</h2>
+          <p class="card__hint">Example: category = Soups</p>
+          <ul class="list" data-list="filtered"></ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Found product</h2>
+          <p data-summary="found">—</p>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Sorted products</h2>
+          <p class="card__hint">Example: by price ascending</p>
+          <ul class="list" data-list="sorted"></ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Cart total</h2>
+          <p class="metric">
+            Total:
+            <strong data-summary="cart-total">—</strong>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Closure result</h2>
+          <p class="card__hint">Example: createCategoryFilter('Soups')</p>
+          <ul class="list" data-list="closure"></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

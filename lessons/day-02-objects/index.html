@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 02 — Objects</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 02: Bangkok Express Objects</h1>
+      <p class="lesson__description">
+        Практика объектов: product, cart, order, методы, this, копирование и деструктуризация.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <h2 class="card__title">Product</h2>
+          <dl class="details">
+            <div class="details__row">
+              <dt>Name</dt>
+              <dd data-product="name">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Price</dt>
+              <dd data-product="price">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Category</dt>
+              <dd data-product="category">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Spicy</dt>
+              <dd data-product="spicy">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Nuts</dt>
+              <dd data-product="nuts">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Vegetarian</dt>
+              <dd data-product="vegetarian">—</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Product properties</h2>
+          <ul class="properties-list"></ul>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Cart</h2>
+          <dl class="details">
+            <div class="details__row">
+              <dt>Item</dt>
+              <dd data-cart="item">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Quantity</dt>
+              <dd data-cart="quantity">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Total</dt>
+              <dd data-cart="total">—</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Order summary</h2>
+          <dl class="details">
+            <div class="details__row">
+              <dt>Customer</dt>
+              <dd data-order="customer">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Phone</dt>
+              <dd data-order="phone">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Address</dt>
+              <dd data-order="address">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Product</dt>
+              <dd data-order="product">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Quantity</dt>
+              <dd data-order="quantity">—</dd>
+            </div>
+            <div class="details__row">
+              <dt>Total</dt>
+              <dd data-order="total">—</dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="card card--wide">
+          <h2 class="card__title">Debug notes</h2>
+          <ul class="debug-notes"></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

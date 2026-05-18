@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1f1e1a;
+  color: #f8f4e3;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.lesson {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.lesson__title {
+  margin: 0 0 8px;
+  font-size: 34px;
+  color: #f2df4a;
+}
+
+.lesson__description {
+  margin: 0 0 24px;
+  color: #c9c5b5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  min-height: 180px;
+  padding: 22px;
+  border: 2px solid #7c7864;
+  border-radius: 20px;
+  background: #2a2923;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.22);
+}
+
+.card__title {
+  margin: 0 0 12px;
+  font-size: 24px;
+  color: #f2df4a;
+}
+
+.card__hint {
+  margin: 0 0 12px;
+  color: #c9c5b5;
+}
+
+.metric {
+  margin: 0;
+  font-size: 22px;
+}
+
+.metric strong {
+  color: #f2df4a;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.list li {
+  color: #f8f4e3;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson__title {
+    font-size: 28px;
+  }
+}

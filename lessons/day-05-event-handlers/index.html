@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 05 — Event Handlers</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="lesson">
+      <h1 class="lesson__title">Day 05: Bangkok Express Events Playground</h1>
+      <p class="lesson__description">Практика событий: категории, делегирование, Add to cart, data-action и карусель.</p>
+
+      <section class="panel carousel">
+        <div>
+          <p class="carousel__label">Carousel</p>
+          <h2 data-carousel="title">—</h2>
+          <p data-carousel="description">—</p>
+          <p data-carousel="image">—</p>
+        </div>
+        <div class="carousel__controls">
+          <button class="button" type="button" data-action="prev">Prev</button>
+          <button class="button" type="button" data-action="next">Next</button>
+        </div>
+      </section>
+
+      <div class="panel cart-panel">Cart items: <strong data-cart="count">0</strong></div>
+
+      <section class="block">
+        <h2 class="block__title">Categories</h2>
+        <div class="categories" data-container="categories"></div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Products</h2>
+        <div class="products-grid" data-container="products"></div>
+      </section>
+
+      <section class="block">
+        <h2 class="block__title">Event log</h2>
+        <ul class="event-log" data-container="event-log"></ul>
+      </section>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

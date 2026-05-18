@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Penang shrimp", "price": 16, "category": "Seafood dishes" },
+  { "id": 2, "name": "Tom yam kai", "price": 7, "category": "Soups" },
+  { "id": 3, "name": "Tom kha kai", "price": 7, "category": "Soups" },
+  { "id": 4, "name": "Som tam papaya salad", "price": 9, "category": "Salads" }
+]
