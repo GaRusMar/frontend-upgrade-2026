@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 02 — Tabs</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="tabs">
+      <h1 class="tabs__title">Day 02: Tabs</h1>
+
+      <div class="tabs__nav" role="tablist" aria-label="Frontend topics">
+        <button class="tabs__button tabs__button--active" type="button" data-tab="html">
+          HTML
+        </button>
+        <button class="tabs__button" type="button" data-tab="css">
+          CSS
+        </button>
+        <button class="tabs__button" type="button" data-tab="javascript">
+          JavaScript
+        </button>
+      </div>
+
+      <div class="tabs__content">
+        <article class="tabs__panel tabs__panel--active" data-tab-panel="html">
+          <h2>HTML</h2>
+          <p>HTML отвечает за структуру страницы.</p>
+        </article>
+
+        <article class="tabs__panel" data-tab-panel="css">
+          <h2>CSS</h2>
+          <p>CSS отвечает за внешний вид страницы.</p>
+        </article>
+
+        <article class="tabs__panel" data-tab-panel="javascript">
+          <h2>JavaScript</h2>
+          <p>JavaScript отвечает за интерактивность страницы.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
